@@ -1,0 +1,1 @@
+//WAP to reverse a 1D Array Using Pointers.
