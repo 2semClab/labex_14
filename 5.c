@@ -9,11 +9,9 @@ int main(){
     scanf("%d",&col);
     int a[row][col];
     printf("Enter the elements of the matrix (row major order) : ");
-    for(int i = 0 ; i<row;i++){
-        for(int j = 0; j<col;j++){
+    for(int i = 0 ; i<row;i++)
+        for(int j = 0; j<col;j++)
             scanf("%d",&a[i][j]);
-        }
-    }
     printf("Given Matrix : \n");
     for(int i =0; i<row;i++){
         for(int j = 0;j<col;j++){
@@ -34,11 +32,9 @@ int main(){
 void transpose(int *a, int row, int col){
     for(int i =0;i<row;i++){
         for(int j =i+1 ; j<col; j++){
-            
                 int temp = *((a+i*col)+j);
                 *((a+i*col)+j) = *((a+j*col)+i);
                 *((a+j*col)+i) = temp;
         }
     }
-
 }
