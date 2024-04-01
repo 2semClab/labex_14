@@ -7,21 +7,17 @@ int main(){
     scanf("%d",&n);
     int a[n];
     printf("Enter the elements of the array : ");
-    for(int i =0 ; i<n; i++){
+    for(int i =0 ; i<n; i++)
         scanf("%d",&a[i]);
-    }
     printf("Before sorting the elements of the array are : ");
-    for(int i =0;i<n;i++){
+    for(int i =0;i<n;i++)
         printf("%d ",a[i]);
-    }
     printf("\n");
     sort(a,n);
     printf("After sorting the elements of the array are : ");
-    for(int i =0;i<n;i++){
+    for(int i =0;i<n;i++)
         printf("%d ",a[i]);
-    }
     printf("\n");
-
     return 0;
 }
 
